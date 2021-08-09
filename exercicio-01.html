@@ -1,0 +1,73 @@
+<!-- formulário de cadastro contendo (radio, select, checkbox, text, date, email, textarea, submit)
+utilizar atributo = "get" action="teste.jsp"-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario (Games)</title>
+</head>
+<body>
+    <form method="POST" action="teste.jsp">
+        <label>Pesquisa sobre Games</label>
+
+        <fieldset class="dados" style="border: none;">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+
+        <div class="tempo-livre">
+            <label>Em qual período do dia voce mais joga?</label>
+            <label>
+                <input type="radio" name="check" checked>Manhã
+            </label>
+            <label>
+                <input type="radio" name="check">Tarde
+            </label>
+            <label>
+                <input type="radio" name="check">Noite
+            </label>
+        </div>
+
+        <div>
+            <label for="plataforma">Selecione uma plataforma</label>
+            <select id="plataforma">
+                <option value="">Pc</option>
+                <option value="">Xbox</option>
+                <option value="">Playstation</option>
+            </select>
+        </div>
+
+        <fieldset style="border: none;">
+            <div>
+                <label for="">Quais estilos voce gosta?</label>
+                <input type="checkbox" name="opcao1">
+                <label for="opcao1">Ação</label>
+                <input type="checkbox" name="opcao2">
+                <label for="opcao2">Aventura</label>
+                <input type="checkbox" name="opcao3">
+                <label for="opcao3">Terror</label>
+                <input type="checkbox" name="opcao4">
+                <label for="opcao4">Esporte</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="">Comente aqui os melhores jogos que voce ja jogou</label>
+            <br>
+            <textarea rows="10" style="width: 26em"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
